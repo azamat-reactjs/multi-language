@@ -1,6 +1,6 @@
-import { storeTypes } from "./storeEnums"
+import { EStoreTypes } from "./EStoreTypes"
 
 export interface ISetLanguageAction {
-  type: typeof storeTypes.SET_LANGUAGE
+  type: typeof EStoreTypes.SET_LANGUAGE
   payload: string
 }

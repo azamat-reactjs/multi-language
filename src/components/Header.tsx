@@ -27,7 +27,7 @@ export const Header: FC<HeaderProps> = ({ fixed, transparent }) => {
     headerClass += ' header--transparent'
   }
 
-  const handleClickOutside = useCallback((e) => {
+  const handleClickOutside = useCallback((e: any) => {
     if (showDropdown && e.target.closest('.dropdown') !== dropdownEl.current) {
       setShowDropdown(true)
     }
